@@ -1,0 +1,216 @@
+package com.example.storycreator;
+
+import java.util.Random;
+
+/**
+ * Created by Home on 12/18/2014.
+ */
+public class Words {
+    public String[] nouns = {
+            "ninja",
+            "chair",
+            "pancake",
+            "statue",
+            "unicorn",
+            "rainbows",
+            "bunny",
+            "nibblets",
+            "cupcake",
+            "carrot",
+            "gnomes",
+            "glitter",
+            "potato",
+            "salad",
+            "toejam",
+            "curtains",
+            "beets",
+            "toilet",
+            "exorcism",
+            "dragons",
+            "jellybeans",
+            "snakes",
+            "dolls",
+            "bushes",
+            "cookies",
+            "apples",
+            "ice cream",
+            "ukulele",
+            "kazoo",
+            "banjo",
+            "circus",
+            "trampoline",
+            "carousel",
+            "carnival",
+            "locomotive",
+    };
+
+
+    public String[] adjectives = {
+            "Fast",
+            "Quick",
+            "Speedy",
+            "Swift",
+            "Hasty",
+            "Zippy",
+            "Rapid",
+            "Slow",
+            "Sluggish",
+            "Creeping",
+            "Dawdling",
+            "Meandering",
+            "Crawling",
+            "Beautiful",
+            "Striking",
+            "Stunning",
+            "Gorgeous",
+            "Lovely",
+            "Charming",
+            "Enchanting",
+            "Exquisite",
+            "Delicate",
+            "Ugly",
+            "Hideous",
+            "Horrid",
+            "Dreadful",
+            "Obnoxious",
+            "Nasty",
+            "Ghastly",
+            "Cruel",
+            "Revolting",
+            "Menacing",
+            "Miserable",
+            "Dangerous",
+            "Rude",
+            "Spoiled",
+            "Wild",
+            "Lazy",
+            "Selfish",
+            "Delinquent",
+            "Greedy",
+            "Vile",
+            "Ridiculous",
+            "Kind",
+            "Gentle",
+            "Quiet",
+            "Caring",
+            "Fair",
+            "Benevolent",
+            "Polite",
+            "Amusing",
+            "Generous",
+            "Hopeful",
+            "Lively",
+            "Creative",
+            "Brave",
+            "Good",
+            "Fantastic",
+            "Marvelous",
+            "Fabulous",
+            "Splendid",
+            "Brilliant",
+            "Superb",
+            "Dynamite",
+            "Bad",
+            "Dreadful",
+            "Terrible",
+            "Ghastly",
+            "Filthy",
+            "Repulsive",
+            "Awful",
+            "Happy",
+            "Joyful",
+            "Ecstatic",
+            "Cheerful",
+            "Delighted",
+            "Blithe",
+            "Carefree",
+            "Bored",
+            "Hardworking",
+            "Mysterious",
+            "Verbose",
+            "Laconic",
+            "Curious",
+            "Bucolic",
+            "Silly",
+            "Contrary",
+            "Shocking",
+            "Wild",
+            "Courageous",
+            "Cowardly",
+            "Ornery",
+            "Gullible",
+            "Thrifty",
+            "Famous",
+            "Infamous",
+            "Brazen",
+            "Cold",
+            "Hard",
+            "Subtle",
+            "Gullible",
+            "Hungry",
+            "Anxious",
+            "Nervous",
+            "Antsy",
+            "Impatient",
+            "Shining",
+            "Crispy",
+            "Soaring",
+            "Endless",
+            "Sparkling",
+            "Fluttering",
+            "Spiky",
+            "Scrumptious",
+            "Eternal",
+            "Slimy",
+            "Slick",
+            "Gilded",
+            "Ancient",
+            "Smelly",
+            "Glowing",
+            "Rotten",
+            "Decrepit",
+            "Lousy",
+            "Grimy",
+            "Rusty",
+            "Sloppy",
+            "Muffled",
+            "Foul",
+            "Rancid",
+            "Fetid",
+            "Small",
+            "Itty-bitty",
+            "Tiny",
+            "Puny",
+            "Miniscule",
+            "Minute",
+            "Diminutive",
+            "Petite",
+            "Slight"
+
+    };
+
+
+    public String getANoun() {
+
+        String newNoun = "";
+
+        Random randomGenerator = new Random();  // Construct a new Random number generator
+        int randomNumber = randomGenerator.nextInt(nouns.length);
+
+        newNoun = nouns[randomNumber];
+
+        return newNoun;
+    }
+
+    public String getAnAdjective() {
+
+        String newAjective = "";
+
+        Random randomGenerator = new Random();  // Construct a new Random number generator
+        int randomNumber = randomGenerator.nextInt(adjectives.length);
+
+        newAjective = adjectives[randomNumber];
+
+        return newAjective;
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Story Improv</string>
+    <string name="action_settings">Settings</string>
+    <string name="startButton">Start</string>
+    <string name="topicHeader">Topic:</string>
+    <string name="newTopic">New Topic</string>
+    <string name="addInHeader">Add In:</string>
+    <string name="timeRemaining">TimeRemaining</string>
+    <string name="instructions">Close</string>
+
+
+</resources>
